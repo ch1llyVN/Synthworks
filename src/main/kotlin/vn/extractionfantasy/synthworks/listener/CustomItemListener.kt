@@ -6,7 +6,6 @@ import org.bukkit.event.block.BlockPlaceEvent
 import org.bukkit.event.player.PlayerInteractEvent
 import org.bukkit.event.inventory.CraftItemEvent
 import org.bukkit.event.inventory.PrepareItemCraftEvent
-import org.bukkit.Material
 import vn.extractionfantasy.synthworks.SynthworksPlugin
 import vn.extractionfantasy.synthworks.gui.SynthworksGui
 
@@ -31,22 +30,7 @@ class CustomItemListener(private val plugin: SynthworksPlugin, private val gui: 
         }
 
         val clicked = event.clickedBlock ?: return
-        if (event.action == org.bukkit.event.block.Action.RIGHT_CLICK_BLOCK &&
-            plugin.crafterManager.isCrafter(clicked.location)
-        ) {
-            event.isCancelled = true
-            if (plugin.hasUsePermission(player)) gui.openPlayerMenu(player)
-            else player.sendMessage("§cYou don't have permission to use Synthworks.")
-            return
-        }
-
-        val materialName = plugin.config.getString("settings.crafter.material", "CRAFTER")!!
-        val tableMaterial = Material.matchMaterial(materialName)
-        if (tableMaterial == null) {
-            plugin.logger.warning("Invalid Synthworks Crafter material '$materialName'.")
-            return
-        }
-        if (event.action == org.bukkit.event.block.Action.RIGHT_CLICK_BLOCK && clicked.type == tableMaterial) {
+        if (plugin.crafterManager.isCrafter(clicked.location)) {
             event.isCancelled = true
             if (plugin.hasUsePermission(player)) gui.openPlayerMenu(player)
             else player.sendMessage("§cYou don't have permission to use Synthworks.")

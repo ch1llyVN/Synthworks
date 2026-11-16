@@ -1,5 +1,11 @@
 # Patch notes
 
+## Synthworks 1.0.0
+
+### Fixed
+
+- Vanilla Crafter blocks are no longer intercepted by Synthworks; only placed Synthworks Crafters open the custom crafting menu.
+
 ## Synthworks 0.1.6
 
 ### Changed

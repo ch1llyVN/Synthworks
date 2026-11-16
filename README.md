@@ -1,4 +1,4 @@
-# Synthworks v0.1.6
+# Synthworks v1.0.0
 
 Kotlin/Paper plugin for Extraction Fantasy on Purpur 1.21.11. Synthworks provides configurable custom items, recipe-book and blueprint GUIs, custom crafting, and an in-game administrator editor.
 
@@ -14,7 +14,7 @@ For the complete Vietnamese usage, configuration, migration, and implementation 
 gradle build
 ```
 
-The plugin JAR is created at `build/libs/Synthworks-0.1.6.jar`. Copy it to the server's `plugins/` directory and restart. Kotlin Standard Library is bundled into the JAR.
+The plugin JAR is created at `build/libs/Synthworks-1.0.0.jar`. Copy it to the server's `plugins/` directory and restart. Kotlin Standard Library is bundled into the JAR.
 
 When upgrading from Synthesis, Synthworks copies files that are missing from `plugins/Synthworks/` from the old `plugins/Synthesis/` folder without overwriting existing files. The old folder is left untouched.
 
@@ -33,7 +33,7 @@ The root command is also registered as `/sw`. Admin permission: `synthworks.admi
 
 ## Player crafting
 
-Right-click a Crafter block or the configured Synthworks table material (default `CRAFTER`) to open the player menu. The Recipe Book is grouped by recipe category. Recipes marked as requiring a blueprint remain locked until the player right-clicks the matching blueprint. Unlocked recipes also appear in Blueprint Storage.
+Right-click a placed Synthworks Crafter to open the player menu. Ordinary vanilla Crafter blocks are not intercepted and retain their normal redstone crafting behavior. The Recipe Book is grouped by recipe category. Recipes marked as requiring a blueprint remain locked until the player right-clicks the matching blueprint. Unlocked recipes also appear in Blueprint Storage.
 
 Select a recipe and either place each required ingredient in its matching input slot and press **C** for manual crafting, or press the cyan **Q** panel to quick craft once from your inventory. Quick Craft is available immediately for recipes without a blueprint. For blueprint recipes, unlock the blueprint and successfully craft manually once; Quick Craft is enabled for later crafts. Missing ingredients are not consumed.
 

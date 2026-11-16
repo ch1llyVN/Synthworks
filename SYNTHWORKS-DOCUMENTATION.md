@@ -31,7 +31,7 @@ gradle build
 JAR đầu ra:
 
 ```text
-build/libs/Synthworks-0.1.6.jar
+build/libs/Synthworks-1.0.0.jar
 ```
 
 Build đóng gói Kotlin Standard Library cùng plugin JAR, vì vậy không cần cài Kotlin hoặc chép thêm Kotlin runtime riêng vào server. Chép JAR vào thư mục `plugins/` của server rồi khởi động lại server. Khi chạy lần đầu, plugin tạo/copy các file mặc định:
@@ -234,7 +234,7 @@ settings:
     custom-model-data: 0
 ```
 
-- `settings.crafter.material`: tên vật liệu Bukkit dùng làm bàn mở menu. Mặc định `CRAFTER`.
+- `settings.crafter.material`: vật liệu được hiển thị trong thông tin cấu hình; bàn Synthworks được nhận diện riêng bằng item đã đánh dấu và vị trí đã lưu. Crafter vanilla không bị chặn tương tác.
 - `settings.crafter.custom-model-data`: custom model data trên item Crafter trước khi đặt; `0` dùng model vanilla.
 - `settings.crafter.particle-interval-ticks`: chu kỳ particle.
 - `settings.crafter.particle-count`: số hạt phát ra mỗi lần hiệu ứng chạy.
