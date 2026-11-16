@@ -1,0 +1,28 @@
+# Synthworks settings
+
+settings:
+  crafter:
+    material: CRAFTER
+    custom-model-data: 0
+    particle: trial_spawner_detection_ominous
+    particle-interval-ticks: 20
+    particle-count: 12
+    particle-player-range: 24
+    particle-location:
+      x: 0.5
+      y: 1.0
+      z: 0.5
+    particle-delta:
+      x: 0.2
+      y: 0.0
+      z: 0.2
+    particle-speed: 0.08
+  blueprint:
+    custom-model-data: 0
+  items:
+    block-placement-default: false
+    vanilla-crafting-default: false
+  integrations:
+    executable-items:
+      enabled: true
+      mode: "IMPORT_ONLY"

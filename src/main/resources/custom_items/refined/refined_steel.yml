@@ -1,0 +1,15 @@
+# Attributes use Bukkit Attribute enum names.
+material: IRON_INGOT
+name: "&7Refined Steel"
+lore:
+  - "&8Refined industrial alloy"
+  - "&7Used in advanced manufacturing."
+custom-model-data: 41001
+amount: 1
+max-stack-size: 64
+unbreakable: false
+glint: false
+block-placement: false
+vanilla-crafting: false
+durability: 0
+attributes: {}

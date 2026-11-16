@@ -1,0 +1,17 @@
+# Attributes use Bukkit Attribute enum names.
+material: IRON_CHESTPLATE
+name: "&bC-Tier Tactical Vest"
+lore:
+  - "&8Extraction Fantasy equipment"
+  - "&7A reinforced field vest."
+custom-model-data: 42001
+amount: 1
+unbreakable: false
+glint: true
+block-placement: false
+vanilla-crafting: false
+durability: 0
+attributes:
+  ARMOR:
+    amount: 4.0
+    operation: ADD_NUMBER

@@ -1,0 +1,24 @@
+name: Synthworks
+version: ${version}
+main: vn.extractionfantasy.synthworks.SynthworksPlugin
+api-version: '1.21'
+author: Extraction Fantasy
+description: Synthworks custom items, blueprints, and crafting.
+commands:
+  synthworks:
+    description: Synthworks main command
+    usage: /synthworks <help|open|editor|give|reload|info>
+    aliases: [sw]
+permissions:
+  synthworks.admin:
+    description: Access Synthworks administration commands
+    default: op
+  synthworks.use:
+    description: Use Synthworks
+    default: true
+  synthesis.admin:
+    description: Legacy permission for Synthworks administration commands
+    default: op
+  synthesis.use:
+    description: Legacy permission for using Synthworks
+    default: true
